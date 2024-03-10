@@ -15,17 +15,62 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+/* Category Card Style */
+.category-card {
+  background-color: #f3f4f7;
+  border: 1px solid #eaecf0;
+}
+
+.category-card:hover {
+  border: 1px solid #667085;
+  background-color: #f9f9fa;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon-div {
+  height: 36px;
+  width: 36px;
+  background: white;
+  border-radius: 50%;
+}
+
+.category-icon-div img {
+  width: 1.5rem;
+}
+
+.category-card-content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.category-summary {
+  font-size: 12px;
+  color: #969dab;
+  font-weight: 900;
+  line-height: 16px;
+}
+
+.circle {
+  height: 0.25rem;
+  width: 0.25rem;
+  border-radius: 50%;
+  background: #667085;
 }
 
 /* Footer Style */
 footer {
   background-color: #fffbee;
 }
+
 .footer-heading {
   font-size: 18px;
+}
+
+.footer-ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .footer-link {
