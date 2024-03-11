@@ -175,6 +175,37 @@ a {
   height: 2.5rem;
 }
 
+/* Student, Course Summary Style */
+.summary-count {
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 700;
+  margin-bottom: 0 !important;
+}
+
+.summary-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 0 !important;
+}
+
+.summary-card-1 {
+  background-color: #d1fadf;
+}
+
+.summary-card-2 {
+  background-color: #dae4ff;
+}
+
+.summary-card-3 {
+  background-color: #ffe8db;
+}
+
+.summary-card-4 {
+  background-color: #fff2cc;
+}
+
 /* Footer Style */
 footer {
   background-color: #fffbee;
