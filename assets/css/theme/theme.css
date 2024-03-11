@@ -206,6 +206,59 @@ a {
   background-color: #fff2cc;
 }
 
+/* Testimonial Style */
+
+/* Download App Style */
+.download-app {
+  background-image: url("../../images/misc/bg-app-min.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.download-app-div {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+.download-app-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  margin-bottom: 0;
+}
+
+.download-app-sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.download-app-button {
+  width: 212px;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 24px;
+  background-color: #eaecf0;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+.download-app-button img {
+  width: 20px;
+}
+
+.download-app-button p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
 /* Footer Style */
 footer {
   background-color: #fffbee;
