@@ -80,6 +80,37 @@ a {
   border-right: 2px solid #f9f9fa;
 }
 
+/* Skill Test Style */
+.skill-test-heading {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.skill-test-button {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+}
+
+.skill-test-image-div {
+  border: 1px solid #eaecf0;
+  border-radius: 0.25rem;
+  position: relative;
+  width: 100%;
+  padding-top: 43.75%; /* 7 / 16 * 100% to maintain a 16:7 aspect ratio */
+  overflow: hidden;
+}
+
+.skill-test-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Optional: Ensures the image covers the container */
+}
+
 /* Footer Style */
 footer {
   background-color: #fffbee;
