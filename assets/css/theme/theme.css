@@ -59,6 +59,27 @@ a {
   background: #667085;
 }
 
+/* Benefits Card Style */
+.benefits-card {
+  background-color: white;
+}
+
+.benefits-card-title {
+  font-size: 20px;
+}
+
+.benefits-icon-div img {
+  width: 54px;
+}
+
+.benefits-border-bottom {
+  border-bottom: 2px solid #f9f9fa;
+}
+
+.benefits-border-right {
+  border-right: 2px solid #f9f9fa;
+}
+
 /* Footer Style */
 footer {
   background-color: #fffbee;
