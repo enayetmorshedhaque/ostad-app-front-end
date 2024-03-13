@@ -82,11 +82,11 @@ a {
 }
 
 .benefits-border-bottom {
-  border-bottom: 2px solid #f9f9fa;
+  border-bottom: 3px solid #f9f9fa;
 }
 
 .benefits-border-right {
-  border-right: 2px solid #f9f9fa;
+  border-right: 3px solid #f9f9fa;
 }
 
 /* Skill Test Style */
@@ -127,6 +127,7 @@ a {
 
 .business-title {
   font-size: 36px;
+  line-height: 47px;
   font-weight: 700;
 }
 
@@ -168,6 +169,7 @@ a {
 
 .business-button:hover {
   background-color: #ffc000;
+  transition: 0.3s;
 }
 
 .business-client {
@@ -249,6 +251,11 @@ a {
   border: none;
 }
 
+.download-app-button:hover {
+  background-color: #d0d5dd;
+  transition: 0.3s;
+}
+
 .download-app-button img {
   width: 20px;
 }
@@ -257,6 +264,91 @@ a {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
+}
+
+/* Free Courses Style */
+.free-courses-div {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 700;
+  margin-bottom: 0 !important;
+}
+
+.section-title + img {
+  height: 32px;
+  width: 32px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 0;
+  flex-grow: 1;
+  width: 70%;
+  border-top-width: 2px;
+  border-top-color: rgb(233, 233, 233);
+}
+
+.free-course-button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.free-course-card:hover {
+  border: 1px solid #667085 !important;
+  /* transition: 0.2s; */
+}
+
+.free-course-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.free-course-details {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.free-course-summary {
+  display: flex;
+  gap: 0.5rem;
+  background-color: rgb(249, 249, 250);
+  color: rgb(16, 24, 40);
+  padding: 3px 6px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.free-course-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.view-details {
+  width: 100%;
+  background-color: #f9f9fa;
+}
+
+.view-details-free-course {
+  padding: 12px 24px;
+  width: 100%;
+  font-size: 14px;
+  background-color: #eaecf0;
+}
+
+.view-details-free-course:hover {
+  background-color: rgb(208, 213, 221);
 }
 
 /* Footer Style */
