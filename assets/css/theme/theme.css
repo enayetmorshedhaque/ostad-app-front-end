@@ -24,6 +24,222 @@ a {
   transition: 0.3s;
 }
 
+/* Hero Image Style */
+.card-style-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-style-inner {
+  border-radius: 26px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.top-left,
+.bottom-left,
+.bottom-right,
+.top-right {
+  position: absolute;
+  height: 30.77%;
+  width: 17.91%;
+  top: -9.63%;
+  right: 89.76%;
+  bottom: 78.85%;
+  left: -7.66%;
+  border-radius: 50%;
+  background-color: #32d583;
+  filter: blur(50.42px);
+  opacity: 0.1;
+}
+
+.bottom-left,
+.bottom-right,
+.top-right {
+  height: 38.15%;
+  width: 17.87%;
+  top: 86.67%;
+  right: -5.8%;
+  bottom: -24.82%;
+  left: 87.94%;
+  opacity: 0.15;
+}
+
+.bottom-left,
+.top-right {
+  height: 43%;
+  width: 18.23%;
+  top: 74.75%;
+  right: 88.46%;
+  bottom: -17.74%;
+  left: -6.7%;
+  background-color: #32d583;
+}
+
+.top-right {
+  height: 32.42%;
+  width: 20.27%;
+  top: -16.88%;
+  right: -14.6%;
+  bottom: 84.46%;
+  left: 94.34%;
+  background-color: var(--blue-100, #4478ff);
+  transform: rotate(33.43deg);
+  transform-origin: 0 0;
+}
+
+.top-center,
+.top-right-center,
+.bottom-center {
+  position: absolute;
+  height: 22.83%;
+  width: 18.93%;
+  top: -11.72%;
+  right: 37.68%;
+  bottom: 88.89%;
+  left: 43.39%;
+  border-radius: 50%;
+  background-color: #12b76a;
+  filter: blur(50px);
+  opacity: 0.2;
+}
+
+.top-right-center,
+.bottom-center {
+  height: 33.74%;
+  width: 18.57%;
+  top: 30.3%;
+  right: 21.88%;
+  bottom: 35.96%;
+  left: 59.55%;
+  background-color: #12b76a;
+  filter: blur(119px);
+  opacity: 0.35;
+}
+
+.bottom-center {
+  height: 61.33%;
+  width: 10.55%;
+  top: 87.88%;
+  right: 24.57%;
+  bottom: -49.21%;
+  left: 64.88%;
+  background-color: #4478ff;
+  filter: blur(50.42px);
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  opacity: 0.15;
+}
+
+.upperbox-1 {
+  display: grid;
+  gap: 1rem;
+}
+
+.upperbox-1-content {
+  display: flex;
+  gap: 1rem;
+}
+
+.upperbox-1-title,
+.upperbox-1-title-blink-text {
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.upperbox-1-title-blink-text {
+  color: #f26359;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.blink-circle {
+  width: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.blink-circle > div {
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  position: absolute;
+  border: 3px solid red;
+  animation: blink-circle-animate 1.4s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+.blink-circle > div:first-child {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  animation-delay: -0.1s;
+}
+.blink-circle > div:nth-child(2) {
+  animation-delay: 0.16s;
+}
+.blink-circle > div:nth-child(3) {
+  animation-delay: 0.42s;
+  border: 3px solid hsla(0, 0%, 100%, 0.5);
+}
+.blink-circle > div:nth-child(4) {
+  border: 3px solid #fff;
+  animation-delay: -0.42s;
+}
+@keyframes blink-circle-animate {
+  0%,
+  80%,
+  to {
+    transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+  }
+  40% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.upperbox-1-sub-title {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.upperbox-2 {
+  display: grid;
+  gap: 1rem;
+}
+
+.upperbox-2-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.upperbox-2 img {
+  width: auto;
+  height: 20px;
+}
+
+.hero-image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 301px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
 /* Category Card Style */
 .category-card {
   background-color: #f3f4f7;
@@ -107,7 +323,7 @@ a {
   border-radius: 0.25rem;
   position: relative;
   width: 100%;
-  padding-top: 43.75%; /* 7 / 16 * 100% to maintain a 16:7 aspect ratio */
+  padding-top: 43.75%;
   overflow: hidden;
 }
 
@@ -117,7 +333,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Optional: Ensures the image covers the container */
+  object-fit: cover;
 }
 
 /* Business Style */
