@@ -139,7 +139,12 @@ a {
 
 .upperbox-1 {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.upperbox1-content-div {
+  display: grid;
+  gap: 8px;
 }
 
 .upperbox-1-content {
@@ -238,6 +243,102 @@ a {
   height: 301px;
   object-fit: cover;
   border-radius: 1rem;
+}
+
+/* Our Course Style */
+.our-courses-div {
+  display: grid;
+  gap: 1rem;
+}
+
+.our-courses-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.our-courses-details {
+  display: grid;
+  gap: 1rem;
+}
+
+.course-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(249, 249, 250, 1);
+  border-bottom: 1px solid rgba(208, 213, 221, 1);
+  padding: 0.5rem;
+}
+
+.batch-details,
+.seat-details,
+.batch-opening-details {
+  display: flex;
+  align-items: center;
+  background-color: rgba(234, 236, 240, 1);
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+  font-size: 11px;
+}
+
+.seat-details,
+.batch-opening-details {
+  gap: 0.25rem;
+}
+
+.seat-details img,
+.batch-opening-details img {
+  width: 0.75rem;
+}
+
+.course-title-div {
+  height: 68px;
+}
+
+.course-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.course-card-footer {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(249, 249, 250, 1);
+  border: none;
+}
+
+.view-course-details-button,
+.see-full-course-button {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem !important;
+}
+
+.view-course-details-button p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.course-card:hover {
+  border: 1px solid #667085;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.full-course-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-course-list-div {
+  width: 357px;
 }
 
 /* Category Card Style */
@@ -519,7 +620,9 @@ a {
   margin-bottom: 0;
 }
 
-.download-app-button {
+.download-app-button,
+.view-course-details-button,
+.see-full-course-button {
   width: 212px;
   height: 2.5rem;
   display: flex;
@@ -532,7 +635,9 @@ a {
   border: none;
 }
 
-.download-app-button:hover {
+.download-app-button:hover,
+.view-course-details-button:hover,
+.see-full-course-button:hover {
   background-color: #d0d5dd;
   transition: 0.3s;
 }
