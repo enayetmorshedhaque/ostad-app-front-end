@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 
+:root {
+  --angle: 45deg !important;
+  --opacity: 0.5 !important;
+}
+
 html,
 body {
   padding: 0;
@@ -15,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.border-radius-26 {
+  border-radius: 26px;
+}
+
 .client {
   filter: grayscale(1);
 }
@@ -22,6 +35,117 @@ a {
 .client:hover {
   filter: grayscale(0);
   transition: 0.3s;
+}
+
+/* Navbar Style */
+#navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+  transition: top 0.3s;
+}
+
+.logo {
+  height: 28px;
+}
+
+a.nav-link:hover {
+  background-color: #eaecf0;
+  border-radius: 5px;
+}
+
+#special-offer {
+  border: 1px solid transparent;
+  border-radius: 5px; /* Ensure border radius is applied generally */
+  background: rgba(255, 255, 255, var(--opacity)); /* Set background color */
+  margin: 0 10px;
+}
+
+#special-offer {
+  /* Paint an image in the border */
+  border-image: conic-gradient(
+      from var(--angle),
+      #d53e33 0deg 90deg,
+      #fbb300 90deg 180deg,
+      #377af5 180deg 270deg,
+      #399953 270deg 360deg
+    )
+    1 stretch;
+
+  /* Animation and custom properties */
+  animation: rotate 1s linear infinite, opacityChange 1s infinite alternate;
+}
+
+/* Animate when Houdini is available */
+@supports (background: paint(houdini)) {
+  #special-offer {
+    border-radius: 5px; /* Ensure border-radius is defined within @supports block */
+  }
+
+  @property --opacity {
+    syntax: "<number>";
+    initial-value: 0.5;
+    inherits: false;
+  }
+
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes opacityChange {
+    to {
+      --opacity: 1;
+    }
+  }
+
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+}
+
+#download-dropdown:focus,
+#download-dropdown:active {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.rotate-up {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.rotate-down {
+  transition: transform 0.3s ease;
+}
+
+.language,
+.all-course-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.all-course-nav,
+.login-nav {
+  padding-top: 0.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.language img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.login-nav {
+  background-color: #ffcd33;
 }
 
 /* Hero Image Style */
@@ -187,6 +311,7 @@ a {
 .blink-circle > div:first-child {
   background-color: hsla(0, 0%, 100%, 0.3);
   animation-delay: -0.1s;
+  background-color: red;
 }
 .blink-circle > div:nth-child(2) {
   animation-delay: 0.16s;
@@ -491,6 +616,10 @@ a {
 .business-client {
   width: auto;
   height: 2.5rem;
+}
+
+#business-image {
+  width: 476px !important;
 }
 
 /* Student, Course Summary Style */

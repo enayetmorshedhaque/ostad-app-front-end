@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ostad - Learn Skills Live</title>
 
+    <!-- Favicons -->
+    <link href="./assets/images/favicon/ostad-logo.png" rel="icon" />
+
     <!-- Bootstrap CSS File -->
     <link
       rel="stylesheet"
@@ -21,161 +24,233 @@
     <link rel="stylesheet" href="./assets/css/theme/theme.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar w/ text</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <!-- Navigation Bar Starts Here -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3" id="navbar">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./assets/images/logo/ostad-logo.png"
+            class="logo"
+            alt="Ostad Logo"
+          />
+        </a>
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-            <span class="navbar-text">
-              Navbar text with an inline element
-            </span>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" id="special-offer" href="#">
+                <img src="./assets/images/misc/special-offer.png" alt="" />
+                স্পেশাল অফার</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" aria-current="page" href="#"
+                >কোড মামা</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" aria-current="page" href="#"
+                >ফ্রী কোর্সেস</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#">ব্লগ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-bold text-dark"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                id="download-dropdown"
+              >
+                ডাউনলোড
+                <i class="fa-solid fa-chevron-down rotate-down" id="down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><div class="p-3">
+                      <button class="view-course-details-button">
+                        <p class="mb-0 text-uppercase">বিস্তারিত দেখি</p>
+                        <i
+                          class="fa-solid fa-arrow-right"
+                          aria-hidden="true"
+                        ></i>
+                      </button></div
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+
+        <div class="d-flex gap-3">
+          <a href="#" class="nav-link">
+            <div class="language p-2">
+              <img src="./assets/images/lang-pic/en.png" alt="" />
+              <p class="mb-0 text-uppercase fw-medium">en</p>
+            </div>
+          </a>
+          <button class="all-course-nav border-0 rounded-1">
+            <p class="mb-0">সব কোর্স</p>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <button class="login-nav border-0 rounded-1">
+            লগইন
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar Ends Here -->
 
     <!-- Hero Image Starts Here -->
     <div class="container">
       <div class="py-5">
         <div class="row">
           <div class="col-12">
-            <div class="card border-1" style="border-radius: 26px">
+            <div class="card border-1 shadow-sm border-radius-26">
               <div class="p-5">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="d-grid gap-5">
-                      <div class="upperbox-1">
-                        <div class="upperbox1-content-div">
-                          <div class="upperbox-1-content">
-                            <p class="upperbox-1-title">বাংলাদেশ শিখবে</p>
-                            <div class="upperbox-1-title-blink-text">
-                              <p class="text-danger mb-0">লাইভে</p>
-                              <div class="blink-circle">
-                                <div></div>
-                                <div></div>
+                <div class="card-style-wrapper">
+                  <div class="card-style-inner">
+                    <div class="top-left"></div>
+                    <div class="bottom-right"></div>
+                    <div class="bottom-left"></div>
+                    <div class="top-right"></div>
+                    <div class="top-center"></div>
+                    <div class="top-right-center"></div>
+                    <div class="bottom-center"></div>
+                  </div>
+                </div>
+                <div style="position: relative; z-index: 999">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                      <div class="d-grid gap-5">
+                        <div class="upperbox-1">
+                          <div class="upperbox1-content-div">
+                            <div class="upperbox-1-content">
+                              <p class="upperbox-1-title">বাংলাদেশ শিখবে</p>
+                              <div class="upperbox-1-title-blink-text">
+                                <p class="text-danger mb-0">লাইভে</p>
+                                <div class="blink-circle">
+                                  <div></div>
+                                  <div></div>
+                                </div>
                               </div>
                             </div>
+                            <p class="upperbox-1-sub-title">
+                              স্কিল শেখার মাধ্যমে বদলে ফেলুন নিজের ভবিষ্যৎ
+                            </p>
                           </div>
-                          <p class="upperbox-1-sub-title">
-                            স্কিল শেখার মাধ্যমে বদলে ফেলুন নিজের ভবিষ্যৎ
-                          </p>
-                        </div>
 
-                        <div class="business-button-div">
-                          <button class="btn btn-sm business-button">
-                            ফ্রিতে শিখুন
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </button>
+                          <div class="business-button-div">
+                            <button class="btn btn-sm business-button">
+                              ফ্রিতে শিখুন
+                              <i
+                                class="fa-solid fa-arrow-right"
+                                aria-hidden="true"
+                              ></i>
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                      <div class="upperbox-2">
-                        <p class="upperbox-2-title">
-                          ৭০০০+ গ্র্যাজুয়েটরা কর্মরত আছেন বিভিন্ন দেশি ও বিদেশি
-                          প্রতিষ্ঠানে:
-                        </p>
-                        <div class="d-flex align-items-cetner flex-wrap gap-3">
-                          <img
-                            src="./assets/images/clients/Brainstation.webp"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/TECHNOSOFT-LOGO.webp"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/Excel.webp"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/Gtr.webp"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/ashtha-it.webp"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/Reve-systems.webp"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/Sofol-it.webp"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/core-devs.png"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/sayburgh.png"
-                            alt=""
-                            class="client"
-                          />
-                          <img
-                            src="./assets/images/clients/anchor-block.png"
-                            alt=""
-                            class="client"
-                          />
+                        <div class="upperbox-2">
+                          <p class="upperbox-2-title">
+                            ৭০০০+ গ্র্যাজুয়েটরা কর্মরত আছেন বিভিন্ন দেশি ও
+                            বিদেশি প্রতিষ্ঠানে:
+                          </p>
+                          <div
+                            class="d-flex align-items-cetner flex-wrap gap-3"
+                          >
+                            <img
+                              src="./assets/images/clients/Brainstation.webp"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/TECHNOSOFT-LOGO.webp"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/Excel.webp"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/Gtr.webp"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/ashtha-it.webp"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/Reve-systems.webp"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/Sofol-it.webp"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/core-devs.png"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/sayburgh.png"
+                              alt=""
+                              class="client"
+                            />
+                            <img
+                              src="./assets/images/clients/anchor-block.png"
+                              alt=""
+                              class="client"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="hero-image-div">
-                      <img
-                        src="./assets/images/hero_image/hero-image.webp"
-                        alt="Hero Image"
-                        class="hero-image"
-                      />
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="hero-image-div">
+                        <img
+                          src="./assets/images/hero_image/hero-image.webp"
+                          alt="Hero Image"
+                          class="hero-image"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- <div class="card-style-wrapper">
-                <div class="card-style-inner">
-                  <div class="top-left"></div>
-                  <div class="bottom-right"></div>
-                  <div class="bottom-left"></div>
-                  <div class="top-right"></div>
-                  <div class="top-center"></div>
-                  <div class="top-right-center"></div>
-                  <div class="bottom-center"></div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
@@ -186,7 +261,7 @@
     <!-- Our Courses Starts Here -->
     <div class="container">
       <div class="py-5">
-        <div class="card border-0 shadow-sm">
+        <div class="card border-0 shadow-sm border-radius-26">
           <div class="p-3">
             <div class="our-courses-div">
               <div class="our-courses-heading">
@@ -1177,57 +1252,69 @@
     <div class="container-fluid bg-white">
       <div class="py-5">
         <div class="container">
-          <div class="card business-card rounded-4 border-0">
-            <div class="p-3">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                  <p class="business-title mb-2">
-                    <span>Ostad</span> for business
-                  </p>
-                  <p class="business-sub-title">
-                    জয়েন করুন আমাদের কর্পোরেট স্কিলস ট্রেইনিং প্রোগ্রামে,
-                    ট্রেইনিং নিন দেশ সেরা ইন্ডাস্ট্রি এক্সপার্টদের থেকে আর
-                    সাজিয়ে নিন আপনার টিমকে নতুনভাবে।
-                  </p>
+          <div class="p-3">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10">
+                <div class="card business-card rounded-4 border-0">
+                  <div class="p-3">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <p class="business-title mb-2">
+                          <span>Ostad</span> for business
+                        </p>
+                        <p class="business-sub-title">
+                          জয়েন করুন আমাদের কর্পোরেট স্কিলস ট্রেইনিং প্রোগ্রামে,
+                          ট্রেইনিং নিন দেশ সেরা ইন্ডাস্ট্রি এক্সপার্টদের থেকে আর
+                          সাজিয়ে নিন আপনার টিমকে নতুনভাবে।
+                        </p>
 
-                  <div class="business-button-div mb-3">
-                    <button class="btn btn-sm business-button">
-                      বিস্তারিত দেখি <i class="fa-solid fa-angle-right"></i>
-                    </button>
-                  </div>
+                        <div class="business-button-div mb-3">
+                          <button class="btn btn-sm business-button">
+                            বিস্তারিত দেখি
+                            <i class="fa-solid fa-angle-right"></i>
+                          </button>
+                        </div>
 
-                  <p class="business-clients-heading">Some of our clients</p>
-                  <div class="d-flex align-items-cetner gap-3 flex-wrap">
-                    <img
-                      src="./assets/images/business_clients/brac.png"
-                      alt="Business Client - 1"
-                      class="client business-client"
-                    />
-                    <img
-                      src="./assets/images/business_clients/ilo.png"
-                      alt="Business Client - 2"
-                      class="client business-client"
-                    />
-                    <img
-                      src="./assets/images/business_clients/indesore.png"
-                      alt="Business Client - 3"
-                      class="client business-client"
-                    />
-                    <img
-                      src="./assets/images/business_clients/teb.png"
-                      alt="Business Client - 4"
-                      class="client business-client"
-                    />
+                        <p class="business-clients-heading">
+                          Some of our clients
+                        </p>
+                        <div class="d-flex align-items-cetner gap-3 flex-wrap">
+                          <img
+                            src="./assets/images/business_clients/brac.png"
+                            alt="Business Client - 1"
+                            class="client business-client"
+                          />
+                          <img
+                            src="./assets/images/business_clients/ilo.png"
+                            alt="Business Client - 2"
+                            class="client business-client"
+                          />
+                          <img
+                            src="./assets/images/business_clients/indesore.png"
+                            alt="Business Client - 3"
+                            class="client business-client"
+                          />
+                          <img
+                            src="./assets/images/business_clients/teb.png"
+                            alt="Business Client - 4"
+                            class="client business-client"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <img
+                          src="./assets/images/business/bg-business.webp"
+                          alt="Business Image"
+                          class="rouneded-3 img-fluid"
+                          id="business-image"
+                        />
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                  <img
-                    src="./assets/images/business/bg-business.webp"
-                    alt="Business Image"
-                    class="rouneded-3 img-fluid"
-                  />
                 </div>
               </div>
+              <div class="col-1"></div>
             </div>
           </div>
         </div>
@@ -2046,10 +2133,27 @@
     <!-- jQuery JS File -->
     <script src="./assets/js/jquery/jquery.min.js"></script>
 
+    <!-- Popper JS CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Bootstrap JS File -->
     <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
 
     <!-- Theme JS -->
     <script src="./assets/js/theme/theme.js"></script>
+
+    <!-- Page JS -->
+    <script>
+      $(document).ready(function () {
+        $("#download-dropdown").on("click", function () {
+          $("#down").toggleClass("rotate-up");
+        });
+      });
+    </script>
   </body>
 </html>
